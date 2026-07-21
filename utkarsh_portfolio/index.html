@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Patange | B.Tech Robotics & Automation Engineer</title>
+    <meta name="description" content="Portfolio of Utkarsh Patange, a final-year B.Tech student in Robotics and Automation specializing in AI in Robotics, Path Planning, PLC, and Industrial Automation.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Node / Circuit Network -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="layout-container">
+        <!-- FIXED LEFT SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <span class="brand-badge"><i class="fa-solid fa-microchip"></i> ROBOTICS PORTFOLIO</span>
+                    <h2 class="brand-name">Utkarsh Patange</h2>
+                    <p class="brand-status"><span class="status-dot"></span> Open for Robotics Roles</p>
+                </div>
+            </div>
+
+            <!-- Main Navigation Links -->
+            <nav class="sidebar-nav">
+                <a href="#hero" class="nav-item active"><i class="fa-solid fa-user"></i> About Me</a>
+                <a href="#projects" class="nav-item"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                <a href="#skills" class="nav-item"><i class="fa-solid fa-layer-group"></i> Skills</a>
+                <a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+            </nav>
+
+            <!-- EXPERTISE SECTION (Requested Specification) -->
+            <div class="expertise-section">
+                <h3 class="expertise-title">
+                    <i class="fa-solid fa-gears"></i> Expertise
+                </h3>
+                <ul class="expertise-list">
+                    <li class="expertise-item">
+                        <span class="exp-icon"><i class="fa-solid fa-robot"></i></span>
+                        <span>Robotics & Automation</span>
+                    </li>
+                    <li class="expertise-item">
+                        <span class="exp-icon"><i class="fa-solid fa-brain"></i></span>
+                        <span>AI in Robotics</span>
+                    </li>
+                    <li class="expertise-item">
+                        <span class="exp-icon"><i class="fa-solid fa-route"></i></span>
+                        <span>Path Planning Algorithms</span>
+                    </li>
+                    <li class="expertise-item">
+                        <span class="exp-icon"><i class="fa-solid fa-microchip"></i></span>
+                        <span>PLC Programming</span>
+                    </li>
+                    <li class="expertise-item">
+                        <span class="exp-icon"><i class="fa-solid fa-network-wired"></i></span>
+                        <span>Embedded Systems</span>
+                    </li>
+                    <li class="expertise-item">
+                        <span class="exp-icon"><i class="fa-solid fa-industry"></i></span>
+                        <span>Robot Operating System(ROS)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Contacts Foot -->
+            <div class="sidebar-footer">
+                <div class="sidebar-socials">
+                    <a href="https://github.com/utkarsh01221" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/utkarsh-patange-570884292" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:utkarshpatange01@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+918999393244" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Utkarsh Patange</p>
+            </div>
+        </aside>
+
+        <!-- Mobile Header Navigation Toggle -->
+        <div class="mobile-header">
+            <div class="mobile-brand">Utkarsh Patange</div>
+            <button id="mobile-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <!-- RIGHT SIDE MAIN CONTENT -->
+        <main class="main-content">
+            
+            <!-- HERO SECTION -->
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="pulse-icon"><i class="fa-solid fa-circle-nodes"></i></span> Final-Year Student
+                    </div>
+                    <h1 class="hero-name">Utkarsh Patange</h1>
+                    <h2 class="hero-subtitle">
+                        B.Tech Robotics & Automation | Future Robotics Engineer
+                    </h2>
+                    <p class="hero-description">
+                        I am a final-year B.Tech student in Robotics and Automation with a strong interest in developing intelligent and efficient robotic systems. I am passionate about integrating Artificial Intelligence with robotics to solve real-world problems and continuously strive to learn and innovate.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Stats Grid -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">B.Tech</span>
+                                <span class="stat-label">Robotics & Automation</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">ROS & AI</span>
+                                <span class="stat-label">System Integration</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">PLC & MELFA</span>
+                                <span class="stat-label">Industrial Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="projects-section">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-code-branch"></i> Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Demonstrating practical implementations of AI, Path Planning, Robotics Control, and Industrial Automation.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Autonomous Robot Path Planning -->
+                    <article class="project-card">
+                        <div class="card-glow"></div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-route"></i></div>
+                            <span class="project-category">Simulation & Algorithms</span>
+                        </div>
+                        <h3 class="project-title">Autonomous Robot Path Planning</h3>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Developed a Python-based simulator using <strong>PyGame</strong></li>
+                                <li>Implemented <strong>A* algorithm</strong> for shortest path optimization & obstacle navigation</li>
+                                <li>Visualized real-time navigation and node exploration in a grid-based environment</li>
+                            </ul>
+                            
+                            <!-- Interactive Pathfinder Simulator Widget -->
+                            <div class="demo-widget">
+                                <div class="widget-header">
+                                    <span><i class="fa-solid fa-play"></i> Live A* Grid Simulator Demo</span>
+                                    <button id="run-astar-btn" class="mini-btn"><i class="fa-solid fa-rotate-right"></i> Run A* Search</button>
+                                </div>
+                                <div class="astar-grid-container" id="astar-grid"></div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyGame</span>
+                            <span class="tag">A* Algorithm</span>
+                            <span class="tag">Path Planning</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: LLM-Driven Industrial Robot Control System -->
+                    <article class="project-card">
+                        <div class="card-glow"></div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+                            <span class="project-category">AI + Industrial Robotics</span>
+                        </div>
+                        <h3 class="project-title">LLM-Driven Industrial Robot Control System</h3>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Designed an AI pipeline converting natural human instructions into <strong>MELFA</strong> robot executable programs</li>
+                                <li>Developed <strong>Python middleware</strong> for socket/serial communication with Mitsubishi robot controllers</li>
+                                <li>Enabled intelligent task planning for autonomous industrial automation workflows</li>
+                            </ul>
+
+                            <!-- Interactive Natural Language to Code Terminal -->
+                            <div class="demo-widget terminal-widget">
+                                <div class="widget-header">
+                                    <span><i class="fa-solid fa-terminal"></i> AI Control Pipeline Interface</span>
+                                </div>
+                                <div class="terminal-box">
+                                    <div class="terminal-line"><span class="prompt">Human ></span> Pick part A from pallet and move to conveyor</div>
+                                    <div class="terminal-line ai-thinking"><i class="fa-solid fa-gear fa-spin"></i> Processing prompt via LLM middleware...</div>
+                                    <div class="terminal-line code-output">
+                                        <span class="code-comment">// Output MELFA BASIC V Command:</span><br>
+                                        <span class="code-keyword">MOV</span> P_PALLET_A<br>
+                                        <span class="code-keyword">HOPEN</span> 1<br>
+                                        <span class="code-keyword">DLY</span> 0.5<br>
+                                        <span class="code-keyword">HCLOSE</span> 1<br>
+                                        <span class="code-keyword">MOV</span> P_CONVEYOR_1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">LLM / AI</span>
+                            <span class="tag">Python Middleware</span>
+                            <span class="tag">Mitsubishi MELFA</span>
+                            <span class="tag">Industrial Automation</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Dobot Pick-and-Place System -->
+                    <article class="project-card">
+                        <div class="card-glow"></div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+                            <span class="project-category">Robotics Kinematics</span>
+                        </div>
+                        <h3 class="project-title">Dobot Pick-and-Place System</h3>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Automated object handling using high-precision robotic arm programming</li>
+                                <li>Optimized coordinate mapping and inverse kinematics for reliable spatial trajectory control</li>
+                                <li>Enhanced operational speed and repeat accuracy across sorting workflows</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Dobot Magician</span>
+                            <span class="tag">Robotic Arm</span>
+                            <span class="tag">Pick & Place</span>
+                            <span class="tag">Kinematics</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: PLC-Based Industrial Automation System -->
+                    <article class="project-card">
+                        <div class="card-glow"></div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-industry"></i></div>
+                            <span class="project-category">Industrial Control</span>
+                        </div>
+                        <h3 class="project-title">PLC-Based Industrial Automation System</h3>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Designed industrial automation systems utilizing Programmable Logic Controllers (PLC)</li>
+                                <li>Implemented <strong>ladder logic</strong> for sequential control of conveyor belts, motor drives, and traffic management systems</li>
+                                <li>Gained hands-on experience in real-time industrial hardware and safety loop integration</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">PLC</span>
+                            <span class="tag">Ladder Logic</span>
+                            <span class="tag">Conveyor & Motor</span>
+                            <span class="tag">Real-Time Control</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="skills-section">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-cubes"></i> Technical Stack</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Structured expertise spanning programming, hardware communication, and industrial software tooling.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Languages -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-category-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3 class="skill-category-title">Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-c"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-square-root-variable"></i>
+                                <span>MATLAB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Technologies -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-category-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <h3 class="skill-category-title">Technologies</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>ROS</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span>Path Planning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Industrial Tools -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-category-icon"><i class="fa-solid fa-industry"></i></div>
+                            <h3 class="skill-category-title">Industrial Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-sliders"></i>
+                                <span>PLC</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-robot"></i>
+                                <span>Mitsubishi MELFA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Design Tools -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-category-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+                            <h3 class="skill-category-title">Design Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-cube"></i>
+                                <span>SolidWorks</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                                <span>AutoCAD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="contact-section">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fa-solid fa-comments"></i> Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">Interested in collaborating or discussing full-time robotics engineering roles? Reach out anytime!</p>
+                </div>
+
+                <div class="contact-container">
+                    <!-- Contact Information Cards -->
+                    <div class="contact-info-list">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+918999393244" class="contact-value">+91 8999393244</a>
+                            </div>
+                            <button class="copy-btn" data-copy="+918999393244" title="Copy Phone Number"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:utkarshpatange01@gmail.com" class="contact-value">utkarshpatange01@gmail.com</a>
+                            </div>
+                            <button class="copy-btn" data-copy="utkarshpatange01@gmail.com" title="Copy Email Address"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/utkarsh-patange-570884292" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/utkarsh-patange-570884292</a>
+                            </div>
+                            <a href="https://www.linkedin.com/in/utkarsh-patange-570884292" target="_blank" rel="noopener" class="external-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/utkarsh01221" target="_blank" rel="noopener" class="contact-value">github.com/utkarsh01221</a>
+                            </div>
+                            <a href="https://github.com/utkarsh01221" target="_blank" rel="noopener" class="external-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Direct Message Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="Utkarsh Patange">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="utkarshpatange01@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" required placeholder="Hi Utkarsh, I would like to discuss a robotics engineering opportunity..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Say Hello</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="form-toast" class="form-toast">
+                            <i class="fa-solid fa-circle-check"></i> Message sent successfully! I'll get back to you soon.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
